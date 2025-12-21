@@ -11,7 +11,7 @@ def linear(arr,element):
         return f"{element} was not found."
 
 
-arr=list(map(int,input("Enter the array values seperated by a comma: ").strip().split(",")))
+arr=list(map(int,filter(None,input("Enter the values separated with a comma:").split(","))))
 element=int(input("Enter the value you want to look for: "))
     
 print(linear(arr,element))
